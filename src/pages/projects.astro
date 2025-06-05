@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../Layouts/baseLayout.astro";
+
+const pageTitle: string = "Projects";
+const pageTitleInAnsii: string = `
+██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝   
+`;
+---
+
+<BaseLayout pageTitle={pageTitle} pageTitleInAnsii={pageTitleInAnsii}>
+  <section>
+    <p>Work in progress!</p>
+  </section>
+</BaseLayout>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 100px 20px 100px;
+  }
+  p {
+    font-size: 30px;
+  }
+</style>

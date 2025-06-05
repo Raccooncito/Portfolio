@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../Layouts/baseLayout.astro";
+
+
+const pageTitle: string = "Home";
+const pageTitleInAnsii: string = `
+██╗     ██╗   ██╗██╗███████╗    ███████╗ ██████╗ ██████╗ ██╗ █████╗ 
+██║     ██║   ██║██║██╔════╝    ██╔════╝██╔═══██╗██╔══██╗██║██╔══██╗
+██║     ██║   ██║██║███████╗    ███████╗██║   ██║██████╔╝██║███████║
+██║     ██║   ██║██║╚════██║    ╚════██║██║   ██║██╔══██╗██║██╔══██║
+███████╗╚██████╔╝██║███████║    ███████║╚██████╔╝██║  ██║██║██║  ██║
+╚══════╝ ╚═════╝ ╚═╝╚══════╝    ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+`;
+const imageSource: string = `/Portfolio/images/image.jpeg`;
+const imageSize: number = 350;
+---
+
+<BaseLayout pageTitle={pageTitle} pageTitleInAnsii={pageTitleInAnsii}>
+  <section>
+    <p>
+      By day, I build clean, scalable web applications. By night, I dive into
+      game development, it's where creativity meets code.
+    </p>
+    <img src={imageSource} width={imageSize} height={imageSize} />
+  </section>
+</BaseLayout>
+<style>
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 100px 20px 100px;
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+
+  p {
+    font-size: 30px;
+  }
+</style>

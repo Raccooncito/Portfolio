@@ -1,0 +1,74 @@
+<nav>
+  <ul>
+    <li>
+      <h1>Luis Soria</h1>
+      <p>FullStack Developer</p>
+    </li>
+    <li><a href=`/Portfolio/`>Home</a></li>
+    <li><a href=`/Portfolio/experience/`>Experience</a></li>
+    <li><a href=`/Portfolio/projects/`>Projects</a></li>
+    <li><a href="">Contact me</a></li>
+  </ul>
+  <button> X </button>
+</nav>
+
+<style>
+  nav {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(218, 201, 54);
+    box-shadow:
+      1px 1px 10px rgb(188, 131, 22),
+      0 0 1em rgb(188, 131, 22),
+      0 0 0.2em rgb(188, 131, 22);
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+    margin: 10px;
+  }
+
+  li h1,
+  li p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255 236 62);
+    transition: all ease-out 0.1s;
+  }
+
+  a:hover {
+    color: rgb(218, 201, 54);
+  }
+
+  button {
+    background-color: rgb(218, 201, 54);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    color: rgb(72, 56, 41);
+    font-weight: bold;
+    font-size: 40px;
+    transition: all ease-out 0.1s;
+  }
+
+  button:hover {
+    background-color: rgb(175, 162, 45);
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 768px) {
+    a {
+      font-size: 20px;
+    }
+  }
+</style>
