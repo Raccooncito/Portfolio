@@ -1,0 +1,42 @@
+---
+import Screen from "./screen.astro";
+import Navbar from "../Components/navbar.astro";
+import PageTitle from "../Components/pageTitle.astro";
+import Footer from "../Components/footer.astro";
+import "../styles/global.css";
+
+const { pageTitle, pageTitleInAnsii } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Screen>
+      <Navbar />
+      <div>
+        <h2>
+          <PageTitle pageTitleInAnsii={pageTitleInAnsii} />
+        </h2>
+        <slot />
+      </div>
+      <Footer />
+    </Screen>
+  </body>
+</html>
+
+<style>
+  h2 {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  div {
+    height: 100%;
+  }
+</style>
