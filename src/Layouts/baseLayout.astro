@@ -24,7 +24,7 @@ const { pageTitle, pageTitleInAnsii } = Astro.props;
         <h2>
           <PageTitle pageTitleInAnsii={pageTitleInAnsii} />
         </h2>
-        <slot />
+        <slot class="slot" />
       </div>
       <Footer />
     </Screen>
@@ -34,9 +34,11 @@ const { pageTitle, pageTitleInAnsii } = Astro.props;
 <style>
   h2 {
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 16px;
   }
+
   div {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 </style>

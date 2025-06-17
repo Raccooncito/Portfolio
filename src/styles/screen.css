@@ -26,28 +26,15 @@
 
 .content {
   height: 85%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 85% 5%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   margin: 50px;
   border: 3px solid rgb(218, 201, 54);
   box-shadow: 1px 1px 10px rgb(188, 131, 22), 0 0 1em rgb(188, 131, 22),
     0 0 0.2em rgb(188, 131, 22);
-}
-
-.content::-webkit-scrollbar {
-  width: 12px;
-}
-
-.content::-webkit-scrollbar-track {
-  background: #111;
-}
-
-.content::-webkit-scrollbar-thumb {
-  background: #0f0;
-  border-radius: 10px;
-  border: 2px solid #000;
 }
 
 .scanlines {

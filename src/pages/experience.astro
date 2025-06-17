@@ -13,20 +13,83 @@ const pageTitleInAnsii: string = `
 ---
 
 <BaseLayout pageTitle={pageTitle} pageTitleInAnsii={pageTitleInAnsii}>
-  <section>
-    <p>Work in progress!</p>
+  <section id="experiencie">
+    <article>
+      <h3>Humam Resources Assistant</h3>
+      <p>
+        <time datetime="2024-09">September 2024</time> - <time
+          datetime="2024-12">December 2024</time
+        >
+      </p>
+      <p>
+        <strong>Feria Internacional del Libro de Guadalajara</strong> - Guadalajara,
+        Mexico
+      </p>
+      <p>
+        <strong>Led recruitment</strong> and <strong>onboarding</strong> of 100+
+        support staff, improving hiring process. <strong
+          >Managed partnerships</strong
+        > with international editorial teams and <strong
+          >maintained a personnel database</strong
+        >
+        to streamline scheduling and event coordination.
+      </p>
+    </article>
+    <article>
+      <h3>Intern Developer</h3>
+      <p>
+        <time datetime="2022-10">October 2022</time> - <time datetime="2022-10"
+          >October 2023</time
+        >
+      </p>
+      <p>
+        <strong>Sanmina Mexico</strong> - Guadalajara, Mexico
+      </p>
+      <p>
+        Developed internal <strong>web tools</strong> using <strong
+          >SQL Server</strong
+        > and <strong>RESTful APIs</strong> for efficient data access. Automated
+        <strong>workflows</strong> creating <strong>Python libraries</strong>.
+        Built <strong>interactive dashboards</strong> with <strong
+          >JavaScript</strong
+        >, integrating Google Services for real-time reporting.
+      </p>
+    </article>
+    <article>
+      <h3>Academic Formation</h3>
+      <p>
+        <strong>Bachelor of Science (B.S.): Systems Engineering</strong>
+        <time datetime="2021-08">August 2021</time> - <time datetime="2024-05"
+          >May 2024</time
+        >
+      </p>
+      <p><strong>Universidad Cuauhtémoc</strong> - Guadalajara, Mexico</p>
+    </article>
   </section>
 </BaseLayout>
 
 <style>
   section {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px 100px 20px 100px;
+    overflow: auto;
+    padding: 0px 50px 10px 50px;
   }
-  p {
+
+  section * {
+    margin: 0;
+  }
+
+  h3 {
     font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  li {
+    font-size: 22px;
   }
 </style>
